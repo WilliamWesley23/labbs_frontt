@@ -1,2 +1,2 @@
 # labbs_frontt
-repositorio usado para disciplina frontend
+<h1>repositorio usado para disciplina frontend</h1>

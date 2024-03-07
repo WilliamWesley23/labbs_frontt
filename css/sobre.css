@@ -1,6 +1,9 @@
 body {
     color: #333333;
-    font-family: "lucida sans unicode", "lucida grande", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 h1{
     background-image: url(../img/sobre-background.jpg);

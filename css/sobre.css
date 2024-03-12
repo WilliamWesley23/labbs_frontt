@@ -1,5 +1,14 @@
+/*cor-base (body e h2
+cor-fundo-img(figure)
+cor- borda-img(figure)
+*/
+:root{
+    --cor--base: #ff0000;
+    --cor--fundo: #fdfdfd;
+    --cor--borda: #ff0000;
+}
 body {
-    color: #333333;
+    color: var(--cor--base);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -9,11 +18,11 @@ h1{
     background-image: url(../img/sobre-background.jpg);
 }
 h2{
-    border-bottom: 2px groove #333333;
+    border-bottom: 2px groove var(--cor--base);
 }
 figure{
-    background-color: #f2EDED;
-    border: 1px solid #ccc;
+    background-color:var(--cor--fundo);
+    border: 1px solid var(--cor--borda);
     text-align: center;
 }
 figcaption{

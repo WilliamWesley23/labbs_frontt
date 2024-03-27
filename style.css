@@ -1,18 +1,17 @@
-:root{
-    --cor--primaria: #ff0095;
-    --cor--secundaria: #000000;
-    --cor--destaque: #0099ff;
-    --cor--fundo--destaque: #000000;
+.sacola{
+    background: url(/img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align:right;
+    width: 140px;
 }
-h1{
-    color: var(--cor--primaria);
+.menu-opçoes ul{
+    font-size: 15px;
 }
-
-h2{
-    color: var(--cor--secundaria);
+.menu-opçoes a{
+    color: #003366;
 }
-
-p{
-    color: var(--cor--destaque);
-    background-color: var(--cor--secundaria);
+body{
+    color: #333;
+    font-family: "lucida sans Unicode", "Lucida Grande", sans-serif;
 }

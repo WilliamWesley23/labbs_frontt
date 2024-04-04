@@ -1,18 +1,30 @@
-.sacola{
+.sacola {
     background: url(/img/sacola.png) no-repeat top right;
     font-size: 14px;
     padding-right: 35px;
-    padding-top: 10px;
-    text-align:right;
+    padding-top: 8px;
+    text-align: right;
     width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.menu-opçoes ul{
+
+.menu-opçoes ul {
     font-size: 15px;
 }
-.menu-opçoes a{
+
+.menu-opçoes a {
     color: #003366;
 }
-body{
+
+.menu-opçoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body {
     color: #333;
     font-family: "lucida sans unicode", "lucida grande" sans-serif;
 }
@@ -21,10 +33,14 @@ body{
 
 .horizontal-list li {
     display: inline;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 90%;
+}
+
+header {
+    position: relative;
 }

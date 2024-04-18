@@ -1,35 +1,38 @@
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
 
 }
-body{
+
+body {
     width: 60%;
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-fieldset{
+
+fieldset {
     margin-bottom: 10px;
     background-color: blanchedalmond;
     border-radius: 5px;
 }
 
-fieldset input, select{
+fieldset input,
+select {
     font-size: medium;
 }
 
-fieldset legend{
+fieldset legend {
     font-weight: bold;
 }
 
-.grid-button-container{
+.grid-button-container {
     display: grid;
     grid-template-columns: auto auto;
     margin: 5px 0;
 }
 
-.grid-button-container input{
+.grid-button-container input {
     font-size: large;
     font-weight: bold;
     color: #ffffff;
@@ -37,13 +40,29 @@ fieldset legend{
     padding: 5px;
 }
 
-.grid-button-container input[type=submit]{
-background-color: blue;
+.grid-button-container input[type=submit] {
+    background-color: blue;
 
 }
 
-.grid-button-container input[type=reset]{
+.grid-button-container input[type=reset] {
     background-color: rgb(255, 0, 0);
-    
-    }
 
+}
+
+.grid-header-container {
+    display: grid;
+    grid-template-areas: 'top-left top-right';
+    border-bottom: rgb(206, 206, 206) 5px solid;
+    margin-bottom: 5px;
+}
+
+.top-right {
+    grid-area: top-right;
+    justify-self: right;
+}
+
+.top-left {
+    grid-area: top-left;
+
+}

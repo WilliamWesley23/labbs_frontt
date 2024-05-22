@@ -8,11 +8,11 @@
     --cor-painel-novidades: #f5dcdc;
     --cor-painel-shadow: #999;
     --cor-painel-titulo: rgba(0, 0, 0, 0.5);
+    --cor-painel-base: rgba(255, 255, 255, 0.1);
     --cor-painel-novidades-grad: #bebef4;
     --cor-panel-mais-vendidos: #dcdcf5;
     --cor-panel-mais-vendidos-grad: #f4bebe;    
 }
-
 .sacola {
     background: url(../img/sacola.png) no-repeat top right;
     font-size: 14px;
@@ -24,40 +24,32 @@
     top: 0;
     right: 0;
 }
-
 .menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
 }
-
 .menu-opcoes ul {
     font-size: 15px;
 }
-
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
 }
-
 .menu-opcoes a {
     color: var(--cor-menu);
 }
-
 body {
     color: var(--cor-base);
     font-family: "Roboto", sans-serif;
 }
-
 .container {
     margin: 0 auto;
     width: 940px;
 }
-
 header {
     position: relative;
 }
-
 .busca,
 .menu-departamentos {
     background-color: var(--cor-menu-lateral);
@@ -67,41 +59,33 @@ header {
     width: 230px;
     float: left;
 }
-
 .menu-departamentos {
     margin-top: 10px;
     padding-bottom: 10px;
     clear: left;
 }
-
 .menu-departamentos li {
     background-color: var(--cor-menu-lateral-itens);
     margin-bottom: 1px;
     padding: 5px 10px;
 }
-
 .menu-departamentos a {
     color: var(--cor-base);
     text-decoration: none;
 }
-
 .busca form,
 .menu-departamentos h2 {
     margin: 10px;
 }
-
 .busca input {
     vertical-align: middle;
 }
-
 .busca input[type="search"] {
     width: 170px;
 }
-
 .destaque {
     margin-top: 10px;
 }
-
 .painel {
     margin: 10px 0;
     padding: 10px;
@@ -109,21 +93,19 @@ header {
     border-radius: 10px;
     box-shadow: inset 1px 1px 4px var(--cor-painel-shadow);
 }
-
 .novidades {
     float: left;
 }
-
 .mais-vendidos {
     float: right;
 }
-
 .painel li {
     display: inline-block;
     vertical-align: top;
     width: 135px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.7s ease-out;
 }
 
 .painel h2 {
@@ -133,79 +115,75 @@ header {
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px var(--cor-painel-titulo);
 }
-
 .painel a {
     color: var(--cor-base);
     font-size: 14px;
     text-align: center;
     text-decoration: none;
 }
-
 .novidades {
     background: linear-gradient(var(--cor-painel-novidades), var(--cor-painel-novidades-grad));
 }
-
 .mais-vendidos {
     background: linear-gradient(var(--cor-panel-mais-vendidos), var(--cor-panel-mais-vendidos-grad));
 }
-
 footer {
     background-image: url(../img/fundo-rodape.png);
     clear: both;
     padding: 20px 0;
     position: relative;
 }
-
 .social a {
     height: 32px;
     width: 32px;
     display: block;
     text-indent: -9999px;
 }
-
 .social a[href*="facebook.com"] {
     background-image: url(../img/facebook.png);
 }
-
 .social a[href*="twitter.com"] {
     background-image: url(../img/twitter.png);
 }
-
 .social a[href*="google.com"] {
     background-image: url(../img/googleplus.png);
 }
-
 .social li {
     float: left;
     margin-left: 25px;
 }
-
 .social {
     position: absolute;
     top: 12px;
     right: 0;
 }
-
 .menu-opcoes a:hover {
     color: var(--cor-menu-lateral-itens-hover);
 }
-
 .menu-opcoes a:active {
     color: var(--cor-menu-lateral-itens-active);
 }
-
 .menu-departamentos li ul {
     display: none;
 }
-
 .menu-departamentos li:hover ul {
     display: block;
 }
-
 .menu-departamentos ul ul li {
     background-color: var(--cor-menu-lateral);
 }
 
 .menu-departamentos li li a::before {
     content: '- ';
+}
+
+.painel li:hover {
+    box-shadow: 0 0 5px var(--cor-base);
+    transition: 0.7s ease-in;
+    background-color: var(--cor-painel-base);
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.05) rotate(5deg);
 }

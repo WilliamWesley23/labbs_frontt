@@ -107,7 +107,6 @@ header {
     padding-bottom: 10px;
     transition: 0.7s ease-out;
 }
-
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
@@ -148,9 +147,11 @@ footer {
 .social a[href*="google.com"] {
     background-image: url(../img/googleplus.png);
 }
+
 .social li {
     float: left;
     margin-left: 25px;
+    margin-left: 10px;
 }
 .social {
     position: absolute;
@@ -172,18 +173,15 @@ footer {
 .menu-departamentos ul ul li {
     background-color: var(--cor-menu-lateral);
 }
-
 .menu-departamentos li li a::before {
     content: '- ';
 }
-
 .painel li:hover {
     box-shadow: 0 0 5px var(--cor-base);
     transition: 0.7s ease-in;
     background-color: var(--cor-painel-base);
     transform: scale(1.05) rotate(-5deg);
 }
-
 .painel li:nth-child(2n):hover {
     transform: scale(1.05) rotate(5deg);
 }
